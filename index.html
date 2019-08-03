@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112834917-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-112834917-1');
+
+	</script>
+
+
+
+	<!-- WEB FONTS & WEB FONTS ICON -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- DESIGN CSS -->
+	<link rel="stylesheet" href="./css/drawer.css">
+	<link rel="stylesheet" href="./css/jquery.bxslider.css">
+	<link rel="stylesheet" href="./css/module.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="drawer drawer--left">
+
+	<!-- MOBILE HEADER DESIGN -->
+	<header class="m_header" role="banner">
+		<button type="button" class="drawer-toggle drawer-hamburger">
+			<span class="sr-only">toggle navigation</span>
+			<span class="drawer-hamburger-icon"></span>
+		</button>
+		<a class="m_logo" href="#">
+			<img src="./imgs/logo_white.svg" alt="모바일버전 핏빗로고">
+		</a>
+		<a class="search_icon" href="#">
+			<img src="./imgs/search.svg" alt="모바일버전 검색아이콘">
+		</a>
+		<a class="cart_icon" href="#">
+			<img src="./imgs/cart.svg" alt="모바일버전 장바구니아이콘">
+		</a>
+		<nav class="drawer-nav" role="navigation">
+			<ul class="drawer-menu">
+				<li><a class="drawer-menu-item" href="#">Products</a></li>
+				<li><a class="drawer-menu-item" href="#">Experiences</a></li>
+				<li><a class="drawer-menu-item" href="#">Fun</a></li>
+				<li><a class="drawer-menu-item" href="#">Help</a></li>
+				<li><a class="drawer-menu-item" href="#">Setup</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- PC HEADER DESIGN -->
+	<header class="pc_header">
+		<nav class="clearfix">
+			<a href="#" class="pc_logo"><img src="./imgs/logo_white.svg" alt="핏빗"></a>
+			<ul class="main_nav clearfix dropdown">
+				<li>
+					<a href="#">Products</a>
+					<div class="dropdown_menu">
+						<div id="tabs">
+							<ul class="tabs_tit">
+								<li class="txt"><a href="#tabs-1">Everyday Fitness</a></li>
+								<li class="txt"><a href="#tabs-2">Active Fitness</a></li>
+								<!--
+                                    <li class="txt"><a href="#tabs-3">Performance Fitness</a></li>
+                                -->
+							</ul>
+							<div id="tabs-1">
+								<ul class="menu_imgs">
+									<li>
+										<a href="#">
+											<img src="./imgs/fitbit_zip.png" alt="핏빗집">
+											<strong>Fitbit Zip®</strong>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="./imgs/fitbit_one.png" alt="핏빗원">
+											<strong>Fitbit One®</strong>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="./imgs/fitbit_flex_2.png" alt="핏빗플렉스투">
+											<strong>Fitbit Flex 2™</strong>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="./imgs/fitbit_alta.png" alt="핏빗알타">
+											<strong>Fitbit Alta™</strong>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div id="tabs-2">
+								<ul class="menu_imgs">
+									<li>
+										<a href="#">
+											<img src="./imgs/chargeHR.png" alt="핏빗차지에이치알">
+											<strong>Fitbit Charge HR™</strong>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="./imgs/charge2.png" alt="핏빗차지투">
+											<strong>Fitbit Charge 2 ™</strong>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="./imgs/blaze.png" alt="핏빗블레이즈">
+											<strong>Fitbit Blaze™</strong>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<!--
+                                <div id="tabs-3">
+                                    <ul class="menu_imgs">
+                                        <li>
+                                            <a href="#">
+                                                <img src="./imgs/fitbit_surge_png.png" alt="">
+                                                <strong>Fitbit Surge™</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            -->
+						</div>
+					</div>
+				</li>
+				<li><a href="#">Experiences</a></li>
+				<li><a href="#">Fun</a></li>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Setup</a></li>
+			</ul>
+			<div class="sub_nav clearfix">
+				<form class="gn_search_wrap">
+					<input type="text" placeholder="search" class="gn_search">
+					<button><img src="./imgs/search_box.svg" alt="검색"></button>
+				</form>
+				<a href="#" class="gn_cart"><img src="./imgs/cart.svg" alt="장바구니"></a>
+			</div>
+		</nav>
+	</header>
+
+	<!-- BANNER DESIGN -->
+	<div class="banner">
+		<a class="arr_left" href="#"><img src="./imgs/arrow_left.svg" alt="왼쪽 화살표"></a>
+		<a class="arr_right" href="#"><img src="./imgs/arrow_right.svg" alt="오른쪽 화살표"></a>
+
+		<div class="product clearfix">
+			<div class="table_cell clearfix">
+				<div class="product_wrap layout-wrapper clearfix">
+					<a class="fitbit_charge2 col-6" href="#"><img src="./imgs/fitbit_charge_2.png" alt="핏빗차지투">
+					</a>
+					<div class="txt col-6">
+						<h2 class="tit_large">Fitbit Charge 2 ™</h2>
+						<p class="tit_medium">$149.95</p>
+						<p class="tit_small">PurePulse® Heart Rate + Multi-Sport Tracking,<br>Connected GPS + Call, Text, Calendar Alerts + Cardio<br>Fitness Level</p>
+						<p class="color">COLORS</p>
+						<ul class="products_colors clearfix">
+							<li class="border_pink">
+								<div class="circle_pink"></div>
+							</li>
+							<li class="border_navy">
+								<div class="circle_navy"></div>
+							</li>
+							<li class="border_gray">
+								<div class="circle_gray"></div>
+							</li>
+							<li class="border_purple">
+								<div class="circle_purple"></div>
+							</li>
+							<li class="border_lime">
+								<div class="circle_lime"></div>
+							</li>
+						</ul>
+						<a class="btn-bg-aqua" href="#">BUY NOW</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="scroll">
+			<a href="#next_section"><img src="./imgs/mouse.svg" alt="스크롤다운 버튼"></a>
+			<p>SCROLL DOWN</p>
+		</div>
+	</div>
+
+	<!-- 1ST SECTION DESIGN -->
+	<div class="video_section clearfix" id="next_section">
+		<div class="txt">
+			<h2 class="tit_large">Find Your Fit</h2>
+			<h3 class="tit_medium">Need help choosing a tracker?</h3>
+			<p class="tit_small">Whether you want to use heart rate to take your fitness to the next level or<br>just want to see how your steps add up each day, there' s a Fitbit tracker for your goals.</p>
+			<a class="btn-bg-white" href="#">LEARN MORE</a>
+		</div>
+
+		<div class="video_layout">
+			<div class="fitbit_video clearfix">
+				<iframe src="https://player.vimeo.com/video/140231270" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<!-- 2ND SECTION DESIGN -->
+	<div class="pattern">
+		<div class="txt">
+			<h2 class="tit_large">All About Fitbit App</h2>
+			<h3 class="tit_medium">Meet the ultimate fitness app.</h3>
+			<p class="tit_small">The Fitbit app has a purpose for every part of your day.<br>Meet the ultimate fitness app.</p>
+		</div>
+
+		<ul class="bxslider">
+			<li><img src="./imgs/app_1_hover.png" alt="핏빗앱 모바일런 화면"></li>
+			<li><img src="./imgs/app_2_hover.png" alt="핏빗앱 투데이 액티비티 화면"></li>
+			<li><img src="./imgs/app_3_hover.png" alt="핏빗앱 슬립모드 화면"></li>
+		</ul>
+
+		<div class="app_wrap layout-wrapper clearfix">
+			<div class="app_img col-4">
+				<img src="./imgs/app_1_hover.png">
+				<div class="cont">
+					<div class="cont_wrap shoes_icon">
+						<div class="img"></div>
+						<p>MobileRun®</p>
+					</div>
+				</div>
+			</div>
+			<div class="app_img col-4">
+				<img src="./imgs/app_2_hover.png">
+				<div class="cont">
+					<div class="cont_wrap runner_icon">
+						<div class="img"></div>
+						<p>All-Day Activity</p>
+					</div>
+				</div>
+			</div>
+			<div class="app_img col-4">
+				<img src="./imgs/app_3_hover.png">
+				<div class="cont">
+					<div class="cont_wrap sleep_icon">
+						<div class="img"></div>
+						<p>Sleep Goals, Tools</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- APP CONTENT DESIGN -->
+	<div class="app_bg">
+		<div class="layout-wrapper">
+			<div class="app_txt">
+				<h4>MobileRun®</h4>
+				<p class="p_medium">Enhance runs, walks and hikes by using the Fitbit app on your smartphone to track pace,<br>time and distance. You can also control your music and use voice cues to stay in command.</p>
+			</div>
+			<ul class="app_btn clearfix">
+				<li><a href="#"><img src="./imgs/apple.png" alt="앱스토어 다운로드 이미지"></a></li>
+				<li><a href="#"><img src="./imgs/google.png" alt="구글플레이 다운로드 이미지"></a></li>
+				<li><a href="#"><img src="./imgs/windows.png" alt="윈도우 스토어 다운로드 이미지"></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- ASIDE BANNER DESIGN -->
+	<aside class="banner_bot">
+		<div class="banner_1 clearfix">
+			<div class="col-6 col-fit img_1"></div>
+			<div class="table_wrap clearfix col-6 col-fit txt_1">
+				<div class="table_cell">
+					<h2>Fitbit Run Club</h2>
+					<p class="p_medium">Access to Fitbit Run Club and Fitbit Club group workouts featuring<br>trainers, coaches and pacers that will get you fit and keep you motivated.</p>
+					<a class="btn-bg-aqua" href="#">JOIN US</a>
+				</div>
+			</div>
+		</div>
+		<div class="banner_2 clearfix">
+			<div class="col-6 col-fit img_2"></div>
+			<div class="table_wrap clearfix col-6 col-fit txt_2">
+				<div class="table_cell">
+					<h2>Try Fitbit !</h2>
+					<p class="p_medium">There’s a Fitbit tracker for your goals.<br>Find more inspiration every day. Try out a product for 30 days !</p>
+					<a class="btn-bg-aqua" href="#">APPLE NOW</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<!-- MOBILE FOOTER DESIGN -->
+	<div class="m_footer">
+		<div class="m_border"></div>
+		<ul class="footer_list">
+			<li class="txt_news clearfix">
+				<p>NEWS</p>
+				<a href="#"><img src="./imgs/plus_btn.svg" alt="모바일 푸터 소메뉴 확장 버튼"></a>
+			</li>
+			<li class="clearfix">
+				<p>GET HELP</p>
+				<a href="#"><img src="./imgs/plus_btn.svg" alt="모바일 푸터 소메뉴 확장 버튼"></a>
+			</li>
+			<li class="clearfix">
+				<p>SOCIAL</p>
+				<a href="#"><img src="./imgs/plus_btn.svg" alt="모바일 푸터 소메뉴 확장 버튼"></a>
+			</li>
+		</ul>
+		<a class="m_nation clearfix" href="#">
+			<img src="./imgs/flag.png" alt="국가설정 이미지">
+			<p>United States</p>
+		</a>
+		<p class="m_copyright">©2016 Fitbit, Inc. All rights reserved.</p>
+	</div>
+
+
+	<!-- PC FOOTER DESIGN -->
+	<div class="pc_footer">
+		<div class="footer layout-wrapper clearfix">
+			<img class="footer_logo" src="./imgs/logo.svg" alt="피씨버전 핏빗로고">
+			<ul class="menu_1">
+				<li class="tit_xsmall menu_tit">GET HELP</li>
+				<li class="p_small">Legal Terms</li>
+				<li class="p_small">Privacy Policy</li>
+				<li class="p_small">Returns, Warranty</li>
+				<li class="p_small">Wear and Care</li>
+				<li class="p_small">Recall, Safety Info</li>
+			</ul>
+			<ul class="menu_2">
+				<li class="tit_xsmall menu_tit">NEWS</li>
+				<li class="p_small">About Us</li>
+				<li class="p_small">Investor Relations</li>
+				<li class="p_small">Careers</li>
+				<li class="p_small">Retailers</li>
+				<li class="p_small">Affiliates</li>
+				<li class="p_small">Fitbit Group Health</li>
+				<li class="p_small">API</li>
+				<li class="p_small">Help</li>
+			</ul>
+			<ul class="menu_sns">
+				<li class="tit_xsmall menu_tit">SOCIAL</li>
+				<div class="sns_icon clearfix">
+					<li><a href="#"><img src="./imgs/fb.svg" alt="페이스북 로고"></a></li>
+					<li><a href="#"><img src="./imgs/twit.svg" alt="트위터 로고"></a></li>
+					<li><a href="#"><img src="./imgs/insta.svg" alt="인스타그램 로고"></a></li>
+					<li><a href="#"><img src="./imgs/youtube.svg" alt="유튜브 로고"></a></li>
+					<li><a href="#"><img src="./imgs/google+.svg" alt="구글플러스 로고"></a></li>
+				</div>
+			</ul>
+		</div>
+
+		<div class="copyright layout-wrapper">
+			<div class="table_cell">
+				<p>©2016 Fitbit, Inc. All rights reserved.</p>
+			</div>
+			<div class="table_cell">
+				<a class="nation" href="#">
+					<img src="./imgs/flag.png" alt="국가설정 이미지">
+					<div class="table_cell">
+						<p>United States</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- JS -->
+	<script src="./js/jquery-1.12.3.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/jquery.bxslider.min.js"></script>
+
+	<!-- iScroll -->
+	<script src="./js/iscroll.js"></script>
+
+	<!-- DRAWER JS -->
+	<script src="./js/drawer.js"></script>
+
+</body>
+
+</html>
